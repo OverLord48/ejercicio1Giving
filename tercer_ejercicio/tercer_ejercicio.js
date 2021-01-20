@@ -1,3 +1,25 @@
+
+/*
+README
+
+Problema 3:  
+Se desea crear un validador para la contraseña de un sitio web, 
+pero esta debe ser muy segura, para ello el cliente solicita los siguientes requerimientos para el password:
+
+Debe tener al menos 16 caracteres.
+Debe tener letras minúsculas y mayúsculas.
+No puede tener 2 letras iguales consecutivas.
+Debe contener al menos 4 números.
+No puede tener 2 números iguales consecutivos. 
+Debe tener al menos 2 caracteres especiales (!@#$%ˆ&*-_+=?) 
+pero ninguno de ellos puede repetirse en ninguna posición y además los caracteres no pueden estar juntos.
+No se puede usar el número 0.
+No se puede colocar espacios.
+
+Nota: No debe usar expresión regular.
+
+*/
+
 const isNumber = (n) => {return !isNaN(parseInt(n)) && !isNaN(n-0)}
 const validatePassword = (passwd) => {
 let arrCaracterS = ['!','@','#','$','%','ˆ','&','*','-','_','+','=','?']
@@ -73,7 +95,7 @@ let messages = []
         messages.push("debe tener al menos 2 caracteres especiales")
       }
       
-      if(mayus === true && minus === true && number === true && cspecial === true){ 
+      if(messages.length === 0){ 
         messages.push(true)
       }
 
@@ -83,27 +105,6 @@ let messages = []
   
   return messages
 }
-
+//ingresar caracteres
 const a = validatePassword("!qwlkejqlwje23#$43sdsfg")
 console.log(a)
-
-/*
-README
-
-Problema 3:  
-Se desea crear un validador para la contraseña de un sitio web, 
-pero esta debe ser muy segura, para ello el cliente solicita los siguientes requerimientos para el password:
-
-Debe tener al menos 16 caracteres.
-Debe tener letras minúsculas y mayúsculas.
-No puede tener 2 letras iguales consecutivas.
-Debe contener al menos 4 números.
-No puede tener 2 números iguales consecutivos. 
-Debe tener al menos 2 caracteres especiales (!@#$%ˆ&*-_+=?) 
-pero ninguno de ellos puede repetirse en ninguna posición y además los caracteres no pueden estar juntos.
-No se puede usar el número 0.
-No se puede colocar espacios.
-
-Nota: No debe usar expresión regular.
-
-*/

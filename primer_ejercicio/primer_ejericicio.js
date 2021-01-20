@@ -1,3 +1,8 @@
+/*
+README
+Problema 1: Se debe crear una solución que dado 2 números X y Y cualesquiera, 
+se obtenga la multiplicación de los mismos SIN usar el operador de multiplicación *.
+*/
 const multip = (x, y) => {
   let resultado = 0
   const positivo = Math.abs(y) == y
@@ -9,9 +14,3 @@ const multip = (x, y) => {
 
 const a = multip(2, 2)
 console.log(a)
-
-/*
-README
-Problema 1: Se debe crear una solución que dado 2 números X y Y cualesquiera, 
-se obtenga la multiplicación de los mismos SIN usar el operador de multiplicación *.
-*/

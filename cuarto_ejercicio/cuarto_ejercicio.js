@@ -1,3 +1,18 @@
+/*
+README
+Problema 4: 
+Dado un arreglo de números cualesquiera sacar la siguiente información:
+
+- Cantidad de elementos del arreglo.
+- Porcentaje de números pares e impares.
+- Porcentaje de números mayores a 1000.
+- Cuál es el mayor y menor valor.
+- Asuma los siguientes indicadores: 
+  * Tome en cuenta que el mayor número representa el 100%, 
+  * indique cual es el porcentaje del número mínimo y el porcentaje del promedio de todos los números.
+
+*/
+
 const infoArr = (...numeros) => {
   let cantidad = numeros.length
   let arrayPar = numeros.filter((numero) => {
@@ -46,23 +61,3 @@ const infoArr = (...numeros) => {
 const eval = infoArr(1,2,3,1,3,1000,2,2,2,2,2,2,10,10)
 console.log(eval)
 
-
-
-
-
-
-
-/*
-README
-Problema 4: 
-Dado un arreglo de números cualesquiera sacar la siguiente información:
-
-- Cantidad de elementos del arreglo.
-- Porcentaje de números pares e impares.
-- Porcentaje de números mayores a 1000.
-- Cuál es el mayor y menor valor.
-- Asuma los siguientes indicadores: 
-  * Tome en cuenta que el mayor número representa el 100%, 
-  * indique cual es el porcentaje del número mínimo y el porcentaje del promedio de todos los números.
-
-*/
