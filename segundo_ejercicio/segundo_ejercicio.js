@@ -10,10 +10,4 @@ invertir la frase: Que la primera palabra quede de última, la segunda de penúl
 
 */
 
-const inverse = (cadena) => {
-    let oracionInvertida = cadena.split(" ").reverse().join(" "); 
-    return oracionInvertida
-}
-
-const execute = inverse("Que la fuerza te acompañe")
-console.log(execute)
+const inverse = cadena => this.oracionInvertida = cadena.split(" ").reverse().join(" ");const execute = inverse("Que la fuerza te acompañe");console.log(execute)
